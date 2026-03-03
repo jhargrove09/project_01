@@ -2,13 +2,10 @@
 # temp == 95
 # print(temp == 95)
 
-temperature = 55
+temperature = 65
+forecast = "sunny"
 
-if temperature > 80:
-    print("It's too hot!")
-    print("Stay inside!")
-elif temperature < 60:
-    print("It's too cold!")
-    print("Stay inside!")
+if temperature < 80 and forecast != "rainy":
+    print("Go outside!")
 else:
-    print("Enjoy the outdoors!")
+    print("Stay inside!")
