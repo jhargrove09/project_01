@@ -1,4 +1,5 @@
-length = 10
-width = 20
-area = length * width
-print(area)
+age  = int(input("How old are you?\n"))
+
+decades = age/10
+
+print("You are " + str(decades) + " decades old!!")
