@@ -4,8 +4,9 @@
 
 temperature = 65
 forecast = "rainy"
+raining = True
 
-if not forecast == "rainy":
-    print("Go outside!")
-else:
+if raining: 
     print("Stay inside!")
+else:
+    print("go outside!")
