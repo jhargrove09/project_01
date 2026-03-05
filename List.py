@@ -10,3 +10,5 @@ acronyms.append('OOTD')
 
 for ack in acronyms:
      print(ack)
+
+     
