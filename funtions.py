@@ -2,6 +2,8 @@ def greeting(name):
     print('Hello', name)
 
 # main program
-name = input('What is your name?\n')
+name1 = input('What is your name?\n')
+greeting(name1)
 
-greeting(name)
+name2 = input('Enter your name'\n)
+greeting(name2)
