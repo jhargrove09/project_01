@@ -17,7 +17,7 @@ class Company:
         print('Paying Employees:')
         for i in self.employees:
             print('Paycheck for:', i.fname, i.lname)
-            print('Amount:', i.calculate_paycheck())
+            #print('Amount:', i.calculate_paycheck())
             print('_________________________')
 
 
@@ -32,6 +32,7 @@ def main():
     my_company.add_employee(employee3)
 
     my_company.display_employees()
+    my_company.pay_employees()
 
 main()
 
