@@ -1,4 +1,4 @@
-from employee import Employee
+from employee_project import Employee, SalaryEmployee, HourlyEmployee 
 
 class Company:
     def __init__(self):
@@ -17,18 +17,18 @@ class Company:
         print('Paying Employees:')
         for i in self.employees:
             print('Paycheck for:', i.fname, i.lname)
-            #print('Amount:', i.calculate_paycheck())
+            print('Amount:', i.calculate_paycheck())
             print('_________________________')
 
 
 def main():
     my_company = Company()
 
-    employee1 = Employee('Eren', 'Yeager', '50000')
+    employee1 = SalaryEmployee('Eren', 'Yeager', '50000')
     my_company.add_employee(employee1)
-    employee2= Employee('Gon', 'Freese', '60000')
+    employee2= HourlyEmployee('Gon', 'Freese', '20', '50')
     my_company.add_employee(employee2)
-    employee3= Employee('Ichigo', 'Kurosaki', '70000')
+    employee3= HourlyEmployee('Ichigo', 'Kurosaki', '40', '15')
     my_company.add_employee(employee3)
 
     my_company.display_employees()
