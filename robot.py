@@ -9,6 +9,9 @@ class Robot:
         self.position[0] = self.position[0] + x
         print('New position:', self.position)
 
+    def eat(self):
+        print('Im hungry!')
+
 class Robot_Dog(Robot):
     def make_noise(self):
         print('Woof Woof!')
